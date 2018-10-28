@@ -1,19 +1,20 @@
 
 import Arrays.Array;
+import LinkedList.LinkedList;
 import Tree.BST;
 
 public class Main {
 
     public static void main(String[] args) {
 	// write your code here
-        BST<Integer> BTree = new BST<>();
-        BTree.add(123);
-        BTree.add(1);
-        BTree.add(44412);
-        BTree.add(1231);
-        BTree.add(2354);
-        BTree.add(145);
-        BTree.add(5345);
-        BTree.inOrder();
+       LinkedList<Integer> linkedList = new LinkedList<>();
+
+       for(int i = 1; i < 6; i++){
+           linkedList.addFirst(i);
+           System.out.println(linkedList);
+       }
+
+       linkedList.add(4, 666);
+       System.out.println(linkedList);
 }
 }
